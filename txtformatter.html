@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>TextSweeper - Samira Said</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="project.css">
+<link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/scripts/main.js"></script>
+
+  
+<div class="navigation-bar">
+        <div class="navigation-bar__buttons header-footer-container website-container">
+          <a href="index.html" class="logo"><div>Samira Said</div></a>
+          <nav>
+            <a href="resume.html" class="nav-buttons"><div>Resume</div></a>
+            <a href="work.html" class="nav-buttons"><div>Work</div></a>
+            <a href="about.html" class="nav-buttons"><div>About</div></a>
+          </nav>
+        </div>
+      </div>
+      
+</head>
+<body>
+  <article>
+    <header>
+      <h1>TextSweeper</h1>
+      <figure>
+        <div class="project-image">
+          <img src="images/mockup4.png" alt="Text Sweeper Mockup4" width="500">
+        </div>
+      </figure>
+      <p>Duration: 1 Month (In Progress) </p>
+      <p>Project Type: CSE 360 Group Project</p>
+      <p>Team Members: Ben Danek, Rachel White, & me</p>
+      <p>My Role: UX Researcher & Developer</p>
+      <p>Tools: Java, Java Swing, Github</p>
+      <p>Skills: Product Development, Teamwork, Time Management, UX Writing </p>
+      <br>
+      <p>This project is intended to format text based on flags embedded in the unformatted text. The current repository contains the basis for a GUI, there is no event handling so far. The point of this is to be have a model we can use for a user guide which is due much further in advance than the final product. The class this is for is supposed to develop robust customer interaction practices, and understanding of how to work on a software team. This page will be updated as the project progresses.</p>
+    </header>
+    <section>
+      <h2>Problem Statement</h2>
+      <p>Our customer is requesting a tool that takes in an input text file and outputs a formatted output file. </p>
+    </section>
+    <section>
+      <h2>Goal</h2>
+      <p>Because the problem statement is extremely vague, we've furthur questioned the customer for more information: How is the format determined of the output file? 
+          We've learned that the customer does not have a preference of the format and that the input text file is a raw text file with commands embedded into it. The customer has given a set of commands that need to be "translated" and has left the rest of the product determinites to our team.
+        Thus, our goal for this project is to develop a program that reads in an input file, processes the commands, and generates the output file. </p>
+    </section>
+    <section>
+      <h2>Research</h2>
+      <p>For research, Ben, Rachel, and I each searched similar products on the market. We've learened that there are various text formatters that are offered online. Most of these products offer a screen that allows the user to see the text prior to downloading, which is something we included in our design as well. As our customer has requested an offline product, we decided to create a program that would launch as a program from a user's desktop which we thought to use Github for.  </p>
+      <h3>Challenges</h3>
+      <ul>
+        <li>How to account for user errors?</li>
+        <li>Will certain commands will override the other?</li>
+        <li>Is there a max character limit?</li>
+        <li>How will a user input the commands?</li>
+        <li>If we decide to use Github, are there pre-requirements for the program run successfully? </li>
+
+
+      </ul>
+      <h3>Task Development</h3>
+      <p>For the development portion of the product, we broke down our project into two steps: 1- creating the front end, 2- adding the functionality (back-end). As Java Swing was something I've previously used in a class, we decided to use Java Swing to implement a GUI (Graphical User Interface) and also adding functionalty with Java. In an overview, our product is a program that takes in a user-selected text file, "translates" the raw text from the given commands, and genreated the output file.  Now that we've tackeled the design challenges, it was time to create a mockup. </p>
+      
+    </section>
+    <section>
+      <h2>Design Sketches & Ideas</h2>
+      <p>Using our research, we came up with 2 different designs for our product. Initially, there was a confusion within our team in how the commands were processed with the file where some team membered understood the customer as the commands being entered into the program, or embedded within the text. After clarifying with the customer, it was confirmed that the text would be embedded with the commands; thus, scrapping the need for a command line in the program. Here are two of our designs of the program:</p>
+      <figure>
+            <div class="project-image">
+              <img src="images/scr1.png" alt="Design Sketch 1" >
+            </div>
+            <div class="project-image">
+              <img src="images/scr2.png" alt="Design Sketch 2">
+            </div>
+          </figure>
+      <h2>GUI Prototype</h2>
+      <p>We made a prototype with Java  that we conducted our usability testing with. Currently, our mockup is our design translated into Java Swing and does not contain any back-end functionality as of yet. We focused on creating features that would work for our users in 3 steps.</p>
+        </figure>
+      <figure>
+        <div class="project-image">
+          <img src="images/mockup4.png" alt="Text Sweeper Mockup" width="500px">
+        </div>
+      </figure>
+    </section>
+
+
+        
+      </figure>
+      <h3>Task 1: Add the text file into the program</h3>
+      <p>Initiate the process of the program by clicking on the ‘Open’ button and selecting a text (.txt) file from the computer directory. The now ingested text should be visible in the main textbox of the program        </p>
+      <h3>Task 2: Format the text</h3>
+      <p>Clicking format will parse the source text for formatting flags, and reformat the source text to match the flags. The intended role of the user is to include the formatting flags as desired to describe where and how a formatting change belongs. Use the scroll bar down this section to see the entire text.        </p>
+      <h3>Task 3: Display Errors (if any)</h3>
+      <p>If any errors are seen, the program will display the error condition in the ‘Error’ box on the bottom section in red text.        </p>
+      <h3>Task 4: View text in sample window</h3>
+      <p>Once the desired results are attained, click on the ‘Save’ button to generate a file that contains the results labeled as Output.txt in the same directory as the source file.         </p>
+  
+      <h3>Error Conditions</h3>
+      <p>While using the TextSweeper, general conditions such as unrecognized commands will be handled by the program; however, all actions marked as unrecognized by the program will trigger an error message printed on the screen: </p>
+     <br>
+      <ul>
+        <li>Invalid Command: Command not recognized as one of the possible commands.</li>
+        <li>Unable to open input file: Input file selected did not contain a .txt extension.</li>
+      </ul>
+
+
+    </section>
+    <section>
+      <h2>Deliverable 1: User Guide</h2>
+      <p>For our first deliverable of the project to the customer, we created a 7 page user guide on how to use the product indlucing pre-requirements for the program. Below is a snippet of the user guide in which we've created.</p>
+      <figure>
+            <div class="project-image">
+              <img src="images/ug2.png" alt="Screen 1">
+            </div>
+            
+          </figure>
+    </section>
+    
+    <section>
+      
+    </section>
+  </article>
+  <div class="header-footer-container footer-text">
+        <div id="copyright">&copy; Samira Said <script>$("#copyright").append(new Date().getFullYear());</script></div>
+        <div id="footer-comment">Developed by Samira Said    </div>
+      </div>
+</body>
+</html>

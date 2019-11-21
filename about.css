@@ -1,0 +1,11 @@
+.about-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 50px;
+}
+
+.resume-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 10px;
+}

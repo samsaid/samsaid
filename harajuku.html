@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>TextSweeper - Samira Said</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="project.css">
+<link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/scripts/main.js"></script>
+
+  
+<div class="navigation-bar">
+        <div class="navigation-bar__buttons header-footer-container website-container">
+          <a href="index.html" class="logo"><div>Samira Said</div></a>
+          <nav>
+            <a href="resume.html" class="nav-buttons"><div>Resume</div></a>
+            <a href="work.html" class="nav-buttons"><div>Work</div></a>
+            <a href="about.html" class="nav-buttons"><div>About</div></a>
+          </nav>
+        </div>
+      </div>
+      
+</head>
+<body>
+  <article>
+    <header>
+      <h1>TextSweeper</h1>
+      <figure>
+        <div class="project-image">
+          <img src="images/titlepage1.png" alt="Harajuku Title Page" width="700">
+        </div>
+      </figure>
+      <p>Duration: 2 1/2 weeks </p>
+      <p>Project Type: FSE 394: Study Abroad in Japan</p>
+      <p>Tools: Unity 3D, C#</p>
+      <p>Skills: Research, Game Development </p>
+      <br>
+      <p>This project was completed during a study abroad course, FSE 394: Visualization and Simulation of Technology in Tokyo, Japan.  </p>
+    </header>
+    <section>
+      <h2>Objective</h2>
+      <p>Initially starting this project, I was unfamiliar with Unity 3D. For the first week and a half of the program, we spent it completeing various projects to familarize ourselves with the technologies. During the last week and a half, I began my individual project which was to select a location in Tokyo, and simulate the traffic, which I was going to demonstrate at the end of the course.  </p>
+    </section>
+    <section>
+      <h2>Research</h2>
+      <p>For this project, I selected my favorite location in Tokyo- Harajuku, also Known as Takeshita Street. Through visiting the location, I've first analyzed then simulated the pedestrian traffic of the popular tourist destination. The traffic source for Harajuku was mainly coming from the train station less than 50 feet from the entrance. The train, which came by every 5 minutes, would release a spawn of pedestrians who then exit the station and enter Harajuku. Some entering stores or walking to the end of the street. In the photo below, the circle marks the main entrance of Harajuku (Takeshita Street), which also happens to be the exit of the train station. The path drawn is the general path if a pedestrian chooses not to go into any stores and the 'X' marks the exit. For this project, I'm assuming majority of pedestrians will take this path and into the shops and the other minority coming from the opposite direction. </p>
+      <figure>
+            <div class="project-image">
+                  <img src="images/assume.png" alt="Design Sketch 1" width="700px" >
+                  <p>Circle = Entrance to Harajuku from train station</p>
+                  <p>Line = Main path through Harajuku </p>
+                  <p>X = Exit</p>
+                </div>
+              </figure>
+      <h3>Input</h3>
+      <ul>
+        <li>Traffic Source:The main source of traffic was from train, though some pedestrians wandering in from the sides of the opposite enterence of Harajuku.</li>
+        <li>Crowd Size: I checked the map of the train route going to Harajuku and noticed this was the last train stop, thus I assumed 100% of passengers were going to Harajuku.</li>
+        <li>Train Scheduling: The train was arriving every 5 minutes.</li>
+      </ul>
+      <h3>Output</h3>
+      <ul>
+        <li>Average number of store entry: Since Harajuku is a very popular tourist destination, there are a numerous amount stores surrounding both directions of the main pathway. To calculate the average of pedestriands that enter the stores, I placed an invisible object inside of each store which I then calculated how many pedestrians had hit the object per store.</li>
+      </ul>
+    </section>
+    <section>
+            <h2>Simulation</h2>
+            <p>The simulation of this project will be added shortly.</p>
+          </section>
+        
+
+
+  </article>
+
+  <div class="header-footer-container footer-text">
+        <div id="copyright">&copy; Samira Said <script>$("#copyright").append(new Date().getFullYear());</script></div>
+        <div id="footer-comment">Developed by Samira Said    </div>
+      </div>
+</body>
+</html>
