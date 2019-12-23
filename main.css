@@ -6,7 +6,7 @@ html {
   box-sizing: inherit;
   /* margin: 0;
   padding: 0; */
-  font-family: avenir, arial;
+  font-family: 'Avenir', Arial, sans-serif;
 }
 
 .website-container {
