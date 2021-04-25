@@ -1,2 +1,2 @@
-# Access the web page at:
+# Personal website
 https://samsaid.github.io/samsaid/
